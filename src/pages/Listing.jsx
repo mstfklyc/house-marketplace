@@ -107,12 +107,14 @@ function Listing() {
         )}
         <ul className="listingDetailsList">
           <li>
-            {listing.bedrooms > 1 ? `${listing.bedrooms}  Bedrooms` : "Bedroom"}
+            {listing.bedrooms > 1
+              ? `${listing.bedrooms}  Bedrooms`
+              : `${listing.bedrooms} Bedroom`}
           </li>
           <li>
             {listing.bathrooms > 1
               ? `${listing.bathrooms}  Bathrooms`
-              : "Bathroom"}
+              : `${listing.bathrooms} Bathroom`}
           </li>
           <li>{listing.parking && "Parking Spot"} </li>
           <li>{listing.furnished && "Furnished"} </li>

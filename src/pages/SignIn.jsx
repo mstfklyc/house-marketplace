@@ -34,7 +34,7 @@ function SignIn() {
         toast("Logged successfully");
       }
     } catch (error) {
-      toast.error("badshit");
+      toast.error("Error");
     }
   };
   return (
